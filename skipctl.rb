@@ -5,20 +5,20 @@
 class Skipctl < Formula
   desc "A tool to perform various network troubleshooting"
   homepage "https://github.com/kartverket/skipctl"
-  version "1.6.2"
+  version "1.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.6.2/skipctl_Darwin_x86_64.tar.gz"
-      sha256 "dd021220c996cee2cc53d4ba322241a9c96544c79b419f3357d1415c61f13c53"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.7.0/skipctl_Darwin_x86_64.tar.gz"
+      sha256 "f620f848c5f0b00eedcc1fce81302936900774869b50f8497ada1b9f052d9c3f"
 
       def install
         bin.install "skipctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.6.2/skipctl_Darwin_arm64.tar.gz"
-      sha256 "4685ee2aa57cf9ce79d7def66f75f0df3b2bc48521d0128163fbfcff4b48250a"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.7.0/skipctl_Darwin_arm64.tar.gz"
+      sha256 "878bc1e224edff285ac65edd708f451c1da6f2b571a6ec4c05b240fcd5fde2ec"
 
       def install
         bin.install "skipctl"
@@ -28,15 +28,15 @@ class Skipctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.6.2/skipctl_Linux_x86_64.tar.gz"
-      sha256 "8be8e984442c651f8e5478ee7d0ab6ef700cfbe8f460b3a641efb8dde140e255"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.7.0/skipctl_Linux_x86_64.tar.gz"
+      sha256 "0660bbd2ac7298db54cce4329c42466ac4959f908dba313f6d3ed979d7669257"
       def install
         bin.install "skipctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.6.2/skipctl_Linux_arm64.tar.gz"
-      sha256 "01b595f0aa9235f9d9594f872404753883fd5ad3fa5939ba6bf698663486a839"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.7.0/skipctl_Linux_arm64.tar.gz"
+      sha256 "392fed022c74bb3fb471889ad7ca12ffa0030a991a9aabf18606821a8d86f4ec"
       def install
         bin.install "skipctl"
       end
