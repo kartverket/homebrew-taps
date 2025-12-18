@@ -1,37 +1,10 @@
-# nonk8s
-apiVersion: "backstage.io/v1alpha1"
-kind: "Component"
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
-  name: "homebrew-taps"
+  name: homebrew-taps
   tags:
-  - "internal"
+    - internal
 spec:
-  type: "service"
-  lifecycle: "production"
-  owner: "it"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_homebrew-taps"
-  title: "Security Champion homebrew-taps"
-spec:
-  type: "security_champion"
-  parent: "it_security_champions"
-  members:
-  - "omaen"
-  children:
-  - "resource:homebrew-taps"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "homebrew-taps"
-  links:
-  - url: "https://github.com/kartverket/homebrew-taps"
-    title: "homebrew-taps på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_homebrew-taps"
-  dependencyOf:
-  - "component:homebrew-taps"
+  type: service
+  lifecycle: production
+  owner: it
