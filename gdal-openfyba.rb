@@ -4,6 +4,7 @@ class GdalOpenfyba < Formula
   url "https://github.com/OSGeo/gdal/releases/download/v3.12.1/gdal-3.12.1.tar.gz"
   sha256 "266cbadf8534d1de831db8834374afd95603e0a6af4f53d0547ae0d46bd3d2d1"
   license "MIT"
+  revision 1
 
   # This will install the same binaries/headers as core gdal, so it must conflict.
   conflicts_with "gdal", because: "both install gdal/ogr utilities and GDAL headers"
@@ -35,6 +36,7 @@ class GdalOpenfyba < Formula
   depends_on "liblerc"
   depends_on "libpng"
   depends_on "libpq"
+  depends_on "librasterlite2"
   depends_on "libspatialite"
   depends_on "libtiff"
   depends_on "libxml2"
