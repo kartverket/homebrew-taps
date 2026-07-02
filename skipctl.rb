@@ -5,20 +5,20 @@
 class Skipctl < Formula
   desc "A tool to perform various network troubleshooting"
   homepage "https://github.com/kartverket/skipctl"
-  version "1.13.1"
+  version "1.14.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.13.1/skipctl_Darwin_x86_64.tar.gz"
-      sha256 "2dbcf1eae190b307446f82a0ecf99d324303f754010dc0c42be484170a0458ef"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.14.0/skipctl_Darwin_x86_64.tar.gz"
+      sha256 "e861b0537f866cf762c9cb612ca1366414f44359ab8487a2725c7d28fed3097a"
 
       define_method(:install) do
         bin.install "skipctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.13.1/skipctl_Darwin_arm64.tar.gz"
-      sha256 "504a464f67cc98d6c5098561e49d1342cfdad7e7f55ef01f35a1d5cfbe1c6b2b"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.14.0/skipctl_Darwin_arm64.tar.gz"
+      sha256 "2400eecf633104176dbcd201b3574e8ba2be50e2f0e459bf928dd10dd952ba6e"
 
       define_method(:install) do
         bin.install "skipctl"
@@ -28,15 +28,15 @@ class Skipctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.13.1/skipctl_Linux_x86_64.tar.gz"
-      sha256 "005875f81f91d38a39354c0904d590a97b1225c552ae3ca85c826f6dcb8e656c"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.14.0/skipctl_Linux_x86_64.tar.gz"
+      sha256 "040df51bf16219f6316ed207c21d23638cbfcde8f40387977309f20ef7c76148"
       define_method(:install) do
         bin.install "skipctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kartverket/skipctl/releases/download/v1.13.1/skipctl_Linux_arm64.tar.gz"
-      sha256 "2f91b4711521b2adc99f49caa20feec0c6f9af1693bb0c5de2ac9fac9f631b39"
+      url "https://github.com/kartverket/skipctl/releases/download/v1.14.0/skipctl_Linux_arm64.tar.gz"
+      sha256 "b74862a632027ff31b70ba5a267f7f21e8a6826cd55738fdabfff418f9b8f927"
       define_method(:install) do
         bin.install "skipctl"
       end
